@@ -16,8 +16,8 @@ alwaysApply: false
 - 公式对照教材：椭圆 a²=b²+c²，双曲线 c²=a²+b²，抛物线 y²=2px 焦点 (p/2,0)。
 - 不确定数值显式推导或标注"示例值"。
 
-## 数学建模
-问题重述 → 模型假设 → 符号说明 → 模型建立 → 求解（Python: numpy/scipy/sympy/matplotlib）→ 结果分析 → 模型评价 → 可运行代码 + PNG 图表。
+## 数学建模（论文对齐 CUMCM 官方格式）
+摘要(≤1页) → 关键词(3~5) → 问题重述 → 问题分析 → 模型假设 → 符号说明 → 模型建立与求解 → 模型检验(误差/灵敏度) → 模型评价与推广 → 参考文献(GB/T 7714) → 附录(可运行代码+PNG)。公式/图表编号并正文引用；求解用 Python（numpy/scipy/sympy/matplotlib）；书面化、忌口语化。
 
 ## LaTeX
 中文用 ctexart + amsmath/amssymb/geometry/booktabs；公式 `align` 对齐；tikz 画图；完成后编译验证。
