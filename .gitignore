@@ -15,5 +15,4 @@ Thumbs.db
 # Local install artifacts (copies of this skill installed into projects/tools)
 .opencode/
 .claude/
-.windsurf/
 *.mdc.bak
