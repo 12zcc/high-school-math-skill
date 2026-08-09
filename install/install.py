@@ -22,6 +22,7 @@ ROOT = os.path.dirname(BASE)
 SKILL_DIR = os.path.join(ROOT, "high-school-math")          # contains SKILL.md
 SKILL_MD = os.path.join(SKILL_DIR, "SKILL.md")
 CURSOR_RULE = os.path.join(ROOT, ".cursor", "rules", "high-school-math.mdc")
+WINDSURF_RULE = os.path.join(ROOT, ".windsurf", "rules", "high-school-math.md")
 COPILOT_MD = os.path.join(ROOT, ".github", "copilot-instructions.md")
 
 NAME = "high-school-math"
@@ -46,6 +47,7 @@ def global_scope():
         "opencode": os.path.join(home_dir, ".config", "opencode", "skills", NAME),
         "agents/skills": os.path.join(home_dir, ".agents", "skills", NAME),
         "cursor (rule)": os.path.join(home_dir, ".cursor", "rules", NAME + ".mdc"),
+        "windsurf (rule)": os.path.join(home_dir, ".windsurf", "rules", NAME + ".md"),
     }
 
 
@@ -72,6 +74,8 @@ def install(targets, dry_run=False):
         try:
             if label.startswith("cursor"):
                 actual = copy_file(CURSOR_RULE, dst)
+            elif label.startswith("windsurf"):
+                actual = copy_file(WINDSURF_RULE, dst)
             elif label.startswith("copilot"):
                 actual = copy_file(COPILOT_MD, dst)
             else:

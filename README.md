@@ -34,6 +34,8 @@ high-school-math-skill/
 │   └── copilot-instructions.md      # GitHub Copilot 指令
 ├── .cursor/
 │   └── rules/high-school-math.mdc   # Cursor Rules
+├── .windsurf/
+│   └── rules/high-school-math.md    # Windsurf Rules
 ├── install/
 │   ├── install.py                   # 跨平台安装脚本（推荐）
 │   ├── install.sh                   # bash 安装
@@ -86,6 +88,7 @@ python install/install.py --list
 | opencode | `~/.config/opencode/skills/` 或 `.opencode/skills/` 自动扫描 | `SKILL.md` |
 | GitHub Copilot | `.github/copilot-instructions.md` | 纯 Markdown 指令 |
 | Cursor | `.cursor/rules/*.mdc`（或 AGENTS.md） | MDC + AGENTS |
+| Windsurf | `.windsurf/rules/*.md`（或 AGENTS.md） | MD + AGENTS |
 | Gemini CLI / Zed / Qwen Code | `AGENTS.md` | 纯 Markdown 指令 |
 | 其他 LLM 应用 | 直接把 `AGENTS.md` 内容作为系统提示 | 纯文本 |
 

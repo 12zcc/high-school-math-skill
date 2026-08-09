@@ -10,6 +10,7 @@ $Name = "high-school-math"
 $Root = Split-Path -Parent $PSScriptRoot
 $SkillDir = Join-Path $Root "high-school-math"
 $CursorRule = Join-Path $Root ".cursor\rules\$Name.mdc"
+$WindsurfRule = Join-Path $Root ".windsurf\rules\$Name.md"
 $CopilotMd = Join-Path $Root ".github\copilot-instructions.md"
 $HomeDir = if ($env:USERPROFILE) { $env:USERPROFILE } else { $HOME }
 
@@ -33,6 +34,7 @@ Install-Skill "claude code"   (Join-Path $HomeDir ".claude\skills\$Name")
 Install-Skill "opencode"      (Join-Path $HomeDir ".config\opencode\skills\$Name")
 Install-Skill "agents/skills" (Join-Path $HomeDir ".agents\skills\$Name")
 Install-Rule  "cursor (rule)" $CursorRule (Join-Path $HomeDir ".cursor\rules\$Name.mdc")
+Install-Rule  "windsurf (rule)" $WindsurfRule (Join-Path $HomeDir ".windsurf\rules\$Name.md")
 
 if ($Project) {
     $Cwd = (Get-Location).Path

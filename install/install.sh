@@ -32,6 +32,7 @@ install_skill "claude code" "$HOME_DIR/.claude/skills/$NAME"
 install_skill "opencode" "$HOME_DIR/.config/opencode/skills/$NAME"
 install_skill "agents/skills" "$HOME_DIR/.agents/skills/$NAME"
 install_rule "cursor (rule)" "$ROOT/.cursor/rules/$NAME.mdc" "$HOME_DIR/.cursor/rules/$NAME.mdc"
+install_rule "windsurf (rule)" "$ROOT/.windsurf/rules/$NAME.md" "$HOME_DIR/.windsurf/rules/$NAME.md"
 
 if [[ "${1:-}" == "--project" ]]; then
   CWD="$(pwd)"
