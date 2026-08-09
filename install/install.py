@@ -52,6 +52,8 @@ def global_scope():
 
 
 def copy_file(src, dst):
+    if os.path.abspath(src) == os.path.abspath(dst):
+        return dst  # source is the target (e.g. --project run from repo root)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     shutil.copy2(src, dst)
     return dst
