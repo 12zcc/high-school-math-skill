@@ -1,18 +1,27 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/高中数学-AI%20技能包-0a66c2?style=for-the-badge" alt="badge"/>
+</p>
+
 # high-school-math
 
-高中数学专题文档生成、数学建模、LaTeX 数学文档与数学问题解答的 **AI 技能包**（面向人教版A版教材、刚学完必修课或基础较弱的学生）。
+**高中数学 AI 技能包** — 专题文档生成 · 数学建模 · LaTeX · 数学问题解答
 
-一个内容源，适配市面上绝大多数 AI 编码工具：Claude Code、opencode、GitHub Copilot、Cursor、Gemini CLI、Zed、Qwen Code、Windsurf 等。
+面向 **人教版A版** 教材、刚学完必修课或基础较弱的学生。一套规范，适配市面上绝大多数 AI 编码工具：Claude Code、opencode、GitHub Copilot、Cursor、Gemini CLI、Zed、Qwen Code、Windsurf 等。
 
-## 特性
+![GitHub License](https://img.shields.io/github/license/12zcc/high-school-math-skill)
+![GitHub stars](https://img.shields.io/github/stars/12zcc/high-school-math-skill)
+![GitHub last commit](https://img.shields.io/github/last-commit/12zcc/high-school-math-skill)
+![Platform](https://img.shields.io/badge/AI-tools-Claude%20Code%20%7C%20opencode%20%7C%20Copilot%20%7C%20Cursor-blue)
 
-- 📄 **高中数学专题 Word 文档**：标准结构（标题页 → 知识梳理 → 专题 → 考点 → 例题 → 5 道星级实战+答案 → 拓展），面向基础学生、讲清来龙去脉。
-- 🧮 **数学建模**：问题重述 → 假设 → 符号 → 建模 → 求解 → 分析 → 评价的完整流程。
-- 🎨 **LaTeX**：ctex 中文数学文档模板、amsmath 公式风格、tikz 作图、booktabs 表格。
-- ✅ **数学正确性保障**：逐题验算、公式对照教材、量纲自检、交付检查清单——降低 AI 生成数学内容的幻觉与算错风险。
-- 🔌 **跨工具**：同一套规范通过 `SKILL.md` / `AGENTS.md` / Copilot instructions / Cursor rules 四种形态适配不同 AI。
+## ✨ 特性
 
-## 目录结构
+- 📄 **高中数学专题 Word 文档**：标准结构（标题页 → 知识梳理 → 专题 → 考点 → 例题 → 5 道星级实战+答案 → 拓展），讲清来龙去脉，基础薄弱也跟得上。
+- 🧮 **数学建模**：问题重述 → 假设 → 符号说明 → 建模 → 求解 → 结果分析 → 模型评价 的完整流程。
+- 🎨 **LaTeX**：`ctex` 中文数学文档模板、`amsmath` 公式风格、`tikz` 作图、`booktabs` 表格，附最小可编译示例。
+- ✅ **数学正确性保障**：逐题验算、公式对照教材、量纲自检、交付检查清单——显著降低 AI 生成数学内容时的幻觉与算错风险。
+- 🔌 **跨工具**：同一规范以 `SKILL.md` / `AGENTS.md` / Copilot instructions / Cursor rules 四种形态适配不同 AI。
+
+## 📁 目录结构
 
 ```
 high-school-math-skill/
@@ -32,7 +41,7 @@ high-school-math-skill/
 └── examples/                        # 示例与使用说明
 ```
 
-## 安装
+## 🚀 安装
 
 ### 方式一：安装脚本（推荐）
 
@@ -62,14 +71,14 @@ python install/install.py --list
 
 > 安装/放置后，**重启你的 AI 工具**使其重新加载配置。
 
-## 使用触发词
+## 🎯 使用触发词
 
 - 高中数学专题 / 辅导文档 / 复习资料 / 讲义 / 试卷
 - 数学建模
 - LaTeX / 公式
 - 圆锥曲线 / 空间向量 / 直线和圆 / 数列 / 三角函数 等章节名
 
-## 支持工具矩阵
+## 🔌 支持工具矩阵
 
 | 工具 | 读取方式 | 形态 |
 |---|---|---|
@@ -80,13 +89,13 @@ python install/install.py --list
 | Gemini CLI / Zed / Qwen Code | `AGENTS.md` | 纯 Markdown 指令 |
 | 其他 LLM 应用 | 直接把 `AGENTS.md` 内容作为系统提示 | 纯文本 |
 
-## 自定义
+## ✏️ 自定义
 
 想调整规范（如改用北师大版、改变文档结构、调整难度）：
 1. 编辑 `high-school-math/SKILL.md`（单事实源）。
 2. 同步 `AGENTS.md`（内容一致）。
 3. 重跑 `install/install.py` 更新已安装位置。
 
-## License
+## 📄 License
 
-MIT，详见 [LICENSE](LICENSE)。
+[MIT](LICENSE) — 自由使用、修改与分发。
